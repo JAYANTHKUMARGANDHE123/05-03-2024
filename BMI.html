@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var H=prompt("Enter height");
+ var W=prompt("Enter weight");
+ var BMI=W/(H*H)
+ document.write(BMI+"<br>");
+ if(BMI>0&&BMI<45){
+ if(BMI<18.5)
+{
+document.write("Under-Weighted<br>"+"tip:Gain some weight");
+}
+else if(BMI>=18.5&&BMI<25)
+{
+document.write("You are Normal"+"tip:Keep it up");
+}
+else if(BMI>=25&&BMI<30)
+{
+document.write("Over-Weighted"+"tip:Do some walk");
+}
+else{
+document.write("Obesity"+"tip:Do workout and follow diet");
+}
+}
+else{
+document.write("Invalid Parameters");
+}
+    </script>
+</body>
+</html>

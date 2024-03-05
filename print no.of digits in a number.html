@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>Declare number;</li>
+        <li>create variable counter to count no.of iterations. </li>
+        <li>run step 4 until number=0;</li>
+        <li>number=number/10;counter++;</li>
+        <li>if number=0 goto step 6.</li>
+        <li>print counter as no.of digits.</li>
+    </ol>
+    <script>
+     var counter=0;
+     var num=prompt("Enter a number");
+     while(num!=0){
+        num=parseInt(num/10);
+        counter++
+     }
+     document.write("no.of digits"+counter)
+    </script>
+</body>
+</html>

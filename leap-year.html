@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        count=0;
+        for(let i=1847;i<=2024;i++){
+            if(i%4==0&&i%100!=0||i%400==0){
+                document.write(i+"<br>")
+                count+=1
+            }
+        }document.write("count="+count)
+    </script>
+</body>
+</html>
