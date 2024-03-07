@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+<script>
+var num=parseInt(prompt("Enter a number"));
+var sum=0,temp=num,rem;
+if(num!=0){
+    while(num!=0){
+        rem=num%10;
+        let fact=1;
+        for(let i=1;i<=rem;i++){
+            fact=fact*i;
+            
+        }
+        sum+=fact;
+            num=parseInt(num/10);
+    }
+    if(sum==temp){
+        document.write(temp+"is a strong number")
+    }
+    else{
+        document.write(temp+"is not a strong number")
+    }}
+
+else{
+    document.write("Unable to calculate for"+temp)
+}
+</script>
+</body>
+</html>
