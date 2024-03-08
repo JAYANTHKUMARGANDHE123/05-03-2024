@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n = parseInt(prompt("enter a number"))
+        temp = n;
+        t = n;
+        sum = 0;
+        var c = 0;
+       
+        while(temp!=0)
+        {
+            temp = parseInt(temp/10);
+            c++;
+
+        }
+        document.write(c)
+        while(n!=0)
+        {
+            rem=n%10;
+            sum = sum+(rem**c);
+            n = parseInt(n/10);
+
+        }
+        document.write(sum)
+        if(t==sum)
+        {
+            document.write("arm")
+        }
+        else{
+            document.write("not")
+        }
+
+    </script>
+</body>
+</html>
