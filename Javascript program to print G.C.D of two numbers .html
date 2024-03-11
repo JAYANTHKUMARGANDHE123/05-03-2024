@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript program to print G.C.D of 2 numbers.</title>
+</head>
+<body>
+    <p>Javascript program to print G.C.D of 2 numbers.</p>
+ <script>
+    var a=prompt("Enter a number"),b=prompt("Enter a number");
+    num1=a,num2=b
+    while(b!=0){
+        temp=b;
+        b=a%b;
+        a=temp;
+    }
+    document.write("G.C.D of"+num1+"and"+num2+"="+a)
+ </script>   
+</body>
+</html>

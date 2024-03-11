@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript program to print fibnacci series till a certain number</title>
+</head>
+<body>
+  <p>Javascript program to print fibnacci series till a certain number</p>
+ <script>
+    var num=parseInt(prompt("Enter a number"));
+    var a=0,b=1;
+    document.write(a+" "+b+" ");
+    c=a+b;
+    while(c<=num){    
+    document.write(c+" ");
+     
+    a=b;
+    b=c;
+    c=a+b;
+    }
+  </script> 
+<!--<script>
+    var a=0,b=1;
+    var n=parseInt(prompt("Enter a number"));
+    document.write(a)
+    document.write(b)
+    
+    for(i=0;i<=n;i++){
+        c=a+b;
+        document.write(c);
+        a=b
+        b=c
+    }
+</script>-->
+<!--<script>
+    var n=prompt("n")
+    a=0
+    b=1
+    document.write(a+" "+b+" ")
+    for(let i=2;i<n;i++){
+        c=a+b
+        document.write(c+" ")
+        a=b
+        b=c
+
+    }
+</script>-->
+</body>
+</html>
