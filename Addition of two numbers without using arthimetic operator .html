@@ -9,20 +9,20 @@
     <h2>Addition of two numbers without using arthimetic operator :-</h2>
     <h3>Using for loop</h3>
     <script>
-        var a=prompt("Enter a number");
-        var b=prompt("Enter a number");
-        for(i=1;i<=b;i++){
-        a++
+        var a=prompt("Enter a number");//user value 3
+        var b=prompt("Enter a number");//user value 5
+        for(i=1;i<=b;i++){ // 1 i<=5 2 3 4 5
+        a++    // 3  4 5 6 7 8 
         }
         document.write("Sum="+a);
     </script>
         <h3>Using while loop :-</h3>
         <script>
-        var a=prompt("Enter a number");
-        var b=prompt("Enter a number");
-        while(b!=0){
-        a++;
-        b--;
+        var a=prompt("Enter a number"); // 5
+        var b=prompt("Enter a number"); // 6
+        while(b!=0){ // b->zero.
+        a++;// 6 7 8 9 10 11
+        b--;// 5 4 3 2 1 0
         }
         document.write("sum="+a);</script>
 </body>

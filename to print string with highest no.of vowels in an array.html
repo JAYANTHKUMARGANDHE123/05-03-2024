@@ -9,17 +9,15 @@
     <script>
         var arr=["rakesh","pradeep","prasad","manoj","laxman","anand","vali","manish","jayanth"];
         var numarr=[]
+       for(let c of arr){
+        b=c.split('');
         count=0;
-        b= arr.forEach(el => {
-        b.split('');
-       count=0;
-       b.forEach((n) => {
-        if(n=='a'||n=='e'||n=='i'||n=='o'||n=='u'||n=='A'||n=='E'||n=='I'||n=='O'||n=='U')
-        count++
-       });
-       numarr.push(n)
+        b.foreach ((n)=>{
+            if(n=='a'||n=='e'||n=='i'||n=='o'||n=='u')
+            count++
         }
         )
+        numarr.push(count)}
         document.write(numarr);
         
     </script>
