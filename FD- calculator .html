@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body > 
+    <h2>Fixed Deposit Calculator</h2>
+    <div> 
+    
+            <div style="height: 250px;width:250px;background-color:aquamarine;position:relative; left:45%;padding-top:20px;">
+            <input type="text" placeholder="username" style="margin:10px;" id="username">
+            <input type="int"  placeholder="age" style="margin: 10px;" id="age">
+            <input type="int" placeholder="amount" style="margin: 10px;" id="amount">
+            <input type="int" placeholder="tenure" style="margin: 10px;" id="tenure">
+            <button onclick="maturityamount()" style="position:relative ;left:60px;">Calculate</button>
+            <h5 id="res"></h5>
+           </div>
+        
+    </div>
+    <script>
+        function maturityamount(){
+            var uname,uage,uamount,utenure;
+            uname=document.getElementById("username").value;
+            uage=document.getElementById("age").value;
+            uamount=document.getElementById("amount").value;
+            utenure=document.getElementById("tenure").value;
+            if(age<60){
+             let ri=6;
+             total=(uamount+parseInt(uamount*ri*utenure)/100);
+             Amount= total-parseInt((total*0.5)/100)
+             document.getElementById("res").innerHTML=uname+"maturityamount="+Amount;
+            }
+            else{
+                ri=8;
+                Amount= (uamount+parseInt(uamount*ri*utenure)/100);
+                document.getElementById("res").innerHTML=uname+"maturityamount="+Amount;
+            }
+        }
+
+    </script>
+</body>
+</html>

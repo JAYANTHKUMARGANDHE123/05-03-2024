@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>forEach :- forEach is an iteration statement which calls a function for every element of an array.<br>
+
+        ->It doesnot create a new array,it can change original array.<br>
+        ->it takes two parameters (values,indices)<br>
+        </p>
+       <script> 
+        let arr=[1,2,3,4];
+        
+        arr.forEach(hello)
+        
+        function hello(i){
+        document.write(i*2+" ");
+        }
+        
+    </script>
+    <p>Using arrow function :-</p>
+    <script>
+        arr=[5,6,7];
+        arr.forEach((i)=>{
+        document.write(i*2+" ");
+        })</script>
+</body>
+</html>
