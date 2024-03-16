@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Reduce() :- it returns the accumulated value by reducing all the array elements into sum of their values as a single value.
+<br>
+        -> reduce function/method takes two parameters :
+    <br><br>     
+        1.element ->value of iterator (of array)
+        <br>
+        2.accumulator -> value of initialiser. (default value is '0'or '1' based on operation)
+        <br><br>
+        -> for addition/subtraction takes default accumulator(0) zero.
+        <br>
+        -> for multiplication/division takes default accumulator(1) one.
+        
+   <br><br><br><br>
+        Program to print sum of elements of an array  with an accumulator value :- 
+    </p>  
+        
+    <script>  
+        let arr=[5,7,12,30,25,43];
+        let res=arr.reduce((el,acc)=>el+acc,5);//el-iterator acc-initialiser=5.
+        document.write(res)//5+5 /10+7 /17+12 /29+30 /59+25 /84+43 /127.
+</script>
+    <p>  Output :- 127.</p>
+</body>
+</html>

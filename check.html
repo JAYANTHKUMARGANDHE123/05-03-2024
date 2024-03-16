@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=["rakesh","vali","anand","laxman","pradeep","prasad","manoj","manish","jaysheel"];
+        newcount=[]
+        arr.forEach((el)=>{
+        count=0;
+        vowels=['a','e','i','o','u'];
+        str=el
+        for(let i=0;i<str.length;i++){
+        vowels.forEach(vowel=>{if (str[i]===vowel||str[i]===vowel.toUppercase())
+        count++
+        });
+        }
+        newcount.push(count+" ")
+        })
+        //document.write(newcount)
+        
+        b=newcount[0]
+        newcount.forEach((e)=>{if(e>b)b=e})
+        ind=newcount.indexof(b)
+        document.write(arr[ind])</script>
+</body>
+</html>

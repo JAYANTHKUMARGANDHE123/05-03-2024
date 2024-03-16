@@ -10,15 +10,19 @@
         var arr=["rakesh","pradeep","prasad","manoj","laxman","anand","vali","manish","jayanth"];
         var numarr=[]
        for(let c of arr){
-        b=c.split('');
+        str=c.split('');
         count=0;
-        b.foreach ((n)=>{
+        str.forEach(n =>{
             if(n=='a'||n=='e'||n=='i'||n=='o'||n=='u')
             count++
         }
         )
         numarr.push(count)}
         document.write(numarr);
+        b=numarr[0]
+numarr.forEach((e)=>{if(e>b)b=e})
+ind=numarr.indexOf(b)
+document.write(arr[ind])
         
     </script>
 </body>
