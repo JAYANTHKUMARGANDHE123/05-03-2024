@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>onchange :- it is used to manipulate data in input tag. 
+
+        Note : to create a table with 4 tr elements with 2 td elements.  we use table>tr*4>td*2;.
+    </p>   
+        <html><head></head>
+        <body>
+        <form>
+        <table>
+        <tr>
+        <td><label>username</label></td>
+        <td><input type="text" name="" id="username" onchange="hello()"><label id="res"></label></td>
+        </tr>
+        <tr>
+        <td><label>password</label></td>
+        <td><input type="password" name="" id="password" onchange="hello2()"><label id="res2"></label></td>
+        </tr>
+        <tr>
+        <td><label>phone</label></td>
+        <td><input type="text" name="" id="phone"></td>
+        </tr>
+        <tr>
+        <td><button>Submit</td>
+        <td><button>Reset</button></td>
+        </tr>
+        </table>
+        </form>
+        <script>
+        function hello(){
+        var uname=document.getElementById("username").value;
+        document.getElementById("res").innerHTML="Hello"+uname;
+        }
+        function hello2(){
+        var pwd=document.getElementById("password").value;
+        if(pwd.length<=6){
+        document.getElementById("res2").innerHTML="Weak Password";
+        }
+        else{
+        document.getElementById("res2").innerHTML="Strong Password";
+        }
+        }
+        </script>
+        </body>
+        </html>
+</body>
+</html>

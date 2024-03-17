@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Map : is a data structure which stores values as key-value pairs,here keys can be of anytypes (Map).</h3>
+<p>Methods in Map :- <br><br>
+set => is used to add keys and values to a Map.<br><br>
+get => is used to access the value using its key in a Map.<br><br>
+has => is used to check if a key is within the Map.<br><br>
+delete => is used to delete the values based on a key in a Map.<br><br>
+-> L.O.C for Map : -
+</p>
+<script>
+    var m1=new Map();
+m1.set(1,"One");// to store key as 1 & value as One.
+m1.set(2,"Two");// to store 2,Two as key and value.
+m1.set(2,"Three");// to replace the value "Two" with "Three".
+m1.set("hi","Hello World");// to store key as "hi" and value as "Hello World".
+
+document.write(m1.get("hi")+"<br>");// Hello World.
+document.write(m1.has("One"))// false because key as "One" is not a available.
+</script><p>
+To access all Keys and Values :-
+</p><script>
+m1.forEach((el,ind)=>{
+document.write(`<br>${ind}->${el}`);
+})
+</script>
+</body>
+</html>

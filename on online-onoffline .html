@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>ononline :- it executes when client internet/network is connected or restored.
+<br><br>
+        onoffline :- it executes when client lost the internet/network connection.</p>
+        
+        <html><head></head>
+        <body onoffline="hello()" ononline="hello2()">
+        <h1 id="myh1">DRF</h1>
+        <script>
+        function hello(){
+        document.getElementById("myh1").innerHTML="You are Offline.";
+        document.getElementById("myh1").style.color="red";
+        }
+        function hello2(){
+        document.getElementById("myh1").innerHTML="DRF";
+        document.getElementById("myh1").style.color="green";
+        }
+        </script>
+        </body>
+        </html>
+</body>
+</html>

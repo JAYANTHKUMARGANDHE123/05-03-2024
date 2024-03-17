@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Program to remove duplicates in an array :-</p>
+    <script>
+    var arr=[5,7,12,30,60,5,12,7];
+    var s1=new Set(arr); // creating set from array.
+    var newarr=[...s1];// creating array from set.
+    document.write(newarr+"<br>"); // (i,e. using SPREAD operator)
+
+for(let a of s1)
+document.write(a+"<br>");
+
+    </script>
+</body>
+</html>

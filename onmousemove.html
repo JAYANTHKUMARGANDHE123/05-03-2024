@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            height:200px;
+            width:150px;
+            background-color: aqua;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>onmousemove :- it executes when the cursor is moved generally used for coordinates.</p> -->
+    <div class="md" onmousemove="hello(event)"></div>
+    <h6 id="res"></h6>
+    <script>
+    function hello(bs){
+    var x=bs.clientX;
+    var y=bs.clientY;
+    document.getElementById("res").innerHTML="Coordinates="+(x+","+y);
+    }
+    </script>
+</body>
+</html>

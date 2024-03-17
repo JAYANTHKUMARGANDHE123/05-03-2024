@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>querySelector :- is use for applying n no.of selectors to access a element by using all possible selectors.</p>
+    
+    <h1 id="hello" class="content"> Hello World </h1>
+    <p class="content"> world is full of emotions and ego's </p>
+    
+    <h2 class="content"> TechJobs </h2>
+    
+    <h3 class="content"> @ Hyd </h3>
+    
+    <button onclick="changeColor()"> Change Color </button>
+    
+    <script>
+    
+    function changeColor() {
+    document.querySelector("h1.content#hello").style.color = "red";
+    
+    }
+    
+    </script>
+</body>
+</html>

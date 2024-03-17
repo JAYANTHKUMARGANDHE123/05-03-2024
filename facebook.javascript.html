@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>For facebook page adding JS :-</p>
+    <!-- <script>
+    function checkLogin(){
+    var uname,upwd;
+    
+    uname=document.getElementById("username").value;
+    pwd=document.grtElementById("password").value;
+    
+    var ourpwd=uname.slice(0,3)+"123";
+    if(pwd==ourpwd){
+    alert("login Successful");
+    }
+    else{
+    alert("Invalid username or password")
+    }
+</script> -->
+<p>   To add some more functionality look to facebook :-
+ <br><br>   
+    -> In div element add a tag with id="result". eg: <h5 id="result"></h5>
+    
+</p>
+<h2>Facebook</h2>
+    <div> 
+    
+            <div style="height: 250px;width:250px;background-color:aquamarine;position:relative; left:45%;padding-top:20px;">
+            <input type="text" placeholder="username" style="margin:10px;" id="username">
+            <input type="password"  placeholder="password" style="margin: 10px;" id="password">
+            <button onclick="checkLogin()" style="position:relative ;top:30px;">Login</button>
+            <h5 id="result"></h5>
+           </div>
+        
+    </div>
+<script>
+    function checkLogin(){
+    var uname,pwd;
+    
+    uname=document.getElementById("username").value;
+    pwd=document.getElementById("password").value;
+    
+    var ourpwd=uname.slice(0,3)+123;
+    if(pwd==ourpwd){
+    document.getElementById("result").innerHTML=uname+"Login Successful";
+    document.getElementById("result").style.color="green";
+    }
+    else{
+    document.getElementById("result").innerHTML="Login failed";
+    document.getElementById("result").style.color="red";
+    }}
+</script>
+   <p> ** form tag always refreshes the webpage everytime .As a result result may not be displayed.</p>
+</body>
+</html>

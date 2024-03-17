@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>getElementsByClassName : - to access  multiple HTML elements using a same class name.</p>
+    
+    <h1 id="hello" class="content"> Hello World</h1>
+    <p class="content"> world is full of emotions and ego's </p>
+    
+    <h2 class="content"> TechJobs </h2>
+    
+    <h3 class="content"> @ Hyd </h3>
+    
+    <button onclick="changeColor()"> Change Color </button>
+    
+    <script>
+    
+    function changeColor() { 
+        var tags = document.getElementsByClassName("content");
+
+    tags[0].style.color = "red";
+    tags[1].style.color="blue";
+    tags [2]. Style, Color="green";
+    tags [3].style.color = "Yellow";
+    }
+    
+    </script>
+</body>
+</html>
