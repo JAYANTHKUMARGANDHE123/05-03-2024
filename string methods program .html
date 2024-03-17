@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string="Welcome to Javascript";
+        var str=string.toUpperCase();
+        var str1=string.toLowerCase();
+        var str2=string.slice(0,6);
+        var str3=string.slice(-13);// supports negative indexing.
+        var str4=string.substring(0,6);
+        var str5=string.substring(-13);//Welcome to Javascript (-ve index isn't supported)
+        
+        document.write(str2);
+    </script>
+        <p> substr : -</p> 
+       <script>
+        var string="Welcome to Javascript"
+        var str=string.substr(2,12); // lcome to Jav
+        
+        document.write(str);
+    </script>
+        <p>padStart & padEnd : - </p>
+    <script>
+        var str="5";
+        var str1=str.padStart(4,"*");
+        var str2=str.padEnd(4,"*");
+        
+        document.write(str1+"<br>"+str2);
+    </script>  
+    <p> Output :- 
+        <br><br>****5<br>
+                  5****
+    </p>   
+    <p> L.O.C for repeat :</p>
+    <script>   
+        var str="Hello ";
+        document.write(str.repeat(2)); // Hello Hello
+    </script>  
+    <p> L.O.C for replace and replaceAll :</p>
+    <script>   
+        var str="Hello World World";
+        document.write(str.replace("World","Javascript")); // Hello Javascript World
+        document.write(str.replaceAll("World","Javascript")); // Hello Javascript Javascript
+        
+    </script> 
+    <p> L.O.C for concat : </p>
+ <script>   
+        var str="Hello World";
+        var res=str.concat("Welcome to Javascript");
+        document.write(res);
+        </script>
+    <p> Output :-  Hello World Welcome to Javascript.</p>
+        
+    <p> L.O.C of indexOf and lastIndexOf :</p>
+     <script>  
+        var str="Hello World Welcome to Javascript World";
+        var res=str.indexOf("World"); // 6
+        var res1=str.lastIndexOf("World"); // 35
+    </script>   
+    <p>  L.O.C for split,startsWith,endsWith : </p>
+    <script>  
+        var str="Hello World";
+        var split=str.split(" ");// Hello World
+        var str1=str.startsWith("Hello");// true
+        var str2=str.endsWith("Hello");// false
+        
+        document.write(split+"<br>"+str1+"<br>"+str3)
+    </script>  
+    <p> L.O.C for length : </p>
+    <script> 
+        var str="Hello World";
+        document.write(str.length); // 11 
+    </script>
+</body>
+</html>

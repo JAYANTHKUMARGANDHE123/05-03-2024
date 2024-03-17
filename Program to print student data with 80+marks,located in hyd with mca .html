@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Constraints:<br><br>
+        student function=> studentName,studentClass,studentLocation,studentMarks in percentage.
+    </p>
+    <script>
+function student(studentName,studentClass,studentLocation,studentMarks){
+this.studentName=studentName;
+this.studentClass=studentClass;
+this.studentLocation=studentLocation;
+this.studentMarks=studentMarks;
+}
+
+let s1=new student("Prasad","MCA","HYD",95);
+let s2=new student("Rakesh","B.Tech","HYD",90);
+let s3=new student("Vali","MCA","HYD",88);
+let s4=new student("Rakesh","MCA","HYD",90);
+let s5=new student("Pradeep","MS","US",95);
+let s6=new student("Anand","MSC","HYD",80);
+let studentArray=[s1,s2,s3,s4,s5,s6]
+
+for(let a of studentArray){
+document.write("<br>")
+if(a.studentClass=="MCA" && a.studentLocation=="HYD" && a.studentMarks>=80){
+for(let i in a){
+document.write(i+":"+a[i]+"<br>")
+}
+}
+}
+document.write("Good Night");
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>-> JS object can have method .<br><br>
+        -> this is  a keyword refers to local value (this)</p> 
+     <script>
+        var mobile={
+        companyName:"Oneplus",
+        modelName:"9RT",
+        price:42000,
+        process:"SP888",
+        mobileFullName:function(){
+        return this.companyName+this.modelName;
+        }
+        }
+        document.write(mobile.mobileFullName());
+        </script>
+</body>
+</html>

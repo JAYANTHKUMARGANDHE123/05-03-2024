@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Program to print mobiles where price is greater than 70000 :-</p>
+<script>
+    function mobile(companyName,modelName,price,processor){
+this.companyName=companyName;
+this.modelName=modelName;
+this.price=price;
+this.processor=processor;
+}
+let m1=new mobile("Oneplus","9RT",42000,"SP888");
+let m2=new mobile("Samsung","S24Ultra",120000,"SP8 Gen2");
+let m3=new mobile("Google","Pixel8",72000,"Tensor");
+let mobileArray=[m1,m2,m3]
+
+for(let a of mobileArray){
+document.write("<br>")
+if(a.price>70000){
+for(let i in a){
+document.write(i+":"+a[i]+"<br>")
+}
+}
+}
+    </script>
+</body>
+</html>

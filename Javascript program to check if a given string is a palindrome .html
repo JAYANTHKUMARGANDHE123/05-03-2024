@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Javascript program to check if a given string is a palindrome :-</p>
+    <script>
+        let str=prompt("Enter a text");
+let arr=str.split("");
+let b=arr.reverse();
+let c=b.join("");
+
+if(str==c){
+document.write(str+"is a palindrome");
+}
+else{
+document.write(str+"is not a palindrome");
+}
+</script>
+<script>document.write("<br><br>")</script>
+<script>
+var str1=prompt("Enter a text");
+if(str1==str1.split("").reverse().join('')){
+document.write(str1+"is a palindrome")
+} 
+else{
+document.write(str1+"is not a palindrome");
+} 
+</script>
+</body>
+</html>
