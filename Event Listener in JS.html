@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Event Listener in Javascript :-<br>
+        Event Listener is a default method we can apply for any DOM element for responding to an event.<br><br>
+        
+        -> it has two properties :<br><br>
+        
+        1. Event <br>
+        
+        2. function()<br><br>
+        
+        Syntax :- addEventListener("event",function);
+    </p>
+        
+        <body>
+        <h1 id="myh1">Hello World</h1>
+        <button id="btn">Click to Change</button>
+        <script>
+        document.getElementById("btn").addEventListener('click',fun);
+
+        function fun()
+        {
+            document.getElementById("myh1").innerHTML="Welcome to JavaScript.";
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> Program using CallBack :-</p>
+<script>
+function hello(myfun){
+document.write("Hello World")
+myfun(); //callback
+}
+
+function greet(){
+document.write("Good Morning!..");
+}
+
+setTimeout(hello,5000,greet);
+</script>
+</body>
+</html>

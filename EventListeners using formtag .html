@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <form action="" id="myform">
+        <div>
+        <label for="">username</label>
+        <input type="text" id="username" required pattern="[a-zA-Z]{5,}">
+        </div>
+        <div>
+        <label for="">Password</label>
+        <input type="password" id="password" required pattern="[a-zA-Z0-9]{6,}">
+        </div>
+        <div>
+        <button type="submit">Login</button>
+        </div>
+        <div>
+        <label for="" id="res" style="color:rgb(160, 10, 10);"></label>
+        </div>
+        </form>
+        <script>
+        document.getElementById("myform").addEventListener('submit',(e)=>{
+        e.preventDefault();
+        var uname=document.getElementById("username").value;
+        var pwd=document.getElementById("password").value;
+        if(pwd==uname.slice(0,3)+"123"){
+        document.getElementById("res").innerHTML="Login Successful"
+        }
+        else{
+        document.getElementById("res").innerHTML="Login Failed"
+        }
+        })
+        </script>
+</body>
+</html>

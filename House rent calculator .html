@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+     background-image:url(https://static.vecteezy.com/system/resources/previews/002/172/762/original/house-front-view-illustration-free-vector.jpg); 
+     background-repeat:no-repeat;
+     background-size:cover;
+    }
+    div{
+        background-color:rgba(255, 255, 255, 0.5);
+        height:550px;
+        width:900px;
+        margin: auto;
+        margin-top:-50px;
+        border-radius:10px;
+    }
+    form{
+        padding:5px;
+        margin:50px;
+        /*font-size:100px;*/
+        font-weight:1800; 
+    }
+    input{
+        padding: 10px;
+        border-radius:4px;
+        margin:50px;
+        font-size:20px;
+    }
+    #btn1{
+        background-color: rgb(238, 3, 3);
+        padding:10px;
+        margin-left:100px;
+        font-size:20px;
+        font-weight:900px;
+        border-radius:10px;
+    }
+    #btn2{
+        background-color: rgb(46, 237, 78);
+        padding:10px;
+        margin-left:330px;
+        font-size:20px;
+        font-weight:900px;
+        border-radius:10px;
+    }
+    #res{
+        font-size:20px;
+        margin-top:-15px;
+        margin-left:60px;
+    }
+    #city{
+        font-size:20px;margin: 50px;padding:10px;border-radius:5px;font-weight:300;
+    }
+    #bhk{
+        font-size:20px;margin: 50px;padding:10px;border-radius:5px;font-weight:300;
+    }
+    #bny{
+        font-size:20px;margin: 50px;padding:10px;border-radius:5px;font-weight:300;
+    }
+    </style>
+</head>
+<body>
+<h2 style="color: rgb(163, 12, 108);text-align: center;"> House Fare Calculator</h2>
+<div>
+<form action="" id="myform">
+<input type="text" placeholder="username" id="username" required pattern="[a-zA-z]{5,}">
+<input type="password" placeholder="password" id="password" required pattern="[a-zA-z0-9]{6,}">
+
+<select id="city">
+    <option  value="0">City</option>
+    <option value="3000">Vizag</option>
+    <option value="4000">Hyderabad</option>
+    <option value="5000">Chennai</option>
+    <option value="8000">Banglore</option>
+    <option value="4000">Chandigarh</option>
+    </select> 
+   
+<!-- <input type="text" placeholder="city" id="city"> -->
+<input type="number" placeholder="area" id="area">
+<!-- <input type="number" placeholder="no.of bedrooms" id="bhk"> -->
+
+<select id="bhk">
+    <option  value="0">No.of.Bedrooms</option>
+    <option value="15000">1BHK</option>
+    <option value="30000">2BHK</option>
+    <option value="45000">3BHK</option>
+    </select> 
+    
+    <select id="bny">
+        <option  value="0">No Balcony</option>
+        <option value="50000">With Balcony</option>
+        </select><h5 id="res"></h5>
+<button type="reset" id="btn1">Cancel</button>
+<button type="submit" id="btn2">Calculate</button>
+</form>
+</div>
+<script>
+    document.getElementById("myform").addEventListener('submit',(e)=>{e.preventDefault();
+
+var uname=document.getElementById("username").value;
+var pwd=document.getElementById("password").value;
+var city=parseInt(document.getElementById("city").value);
+var bhk=parseInt(document.getElementById("bhk").value);
+var area=parseInt(document.getElementById("area").value);
+var bny=parseInt(document.getElementById("bny").value);
+if(pwd==uname.slice(0,3)+"123"){
+  Fare=city*area+bhk+bny;
+  EstimatedFare= Fare+(parseInt(Fare*8)/100);
+  document.getElementById("res").innerHTML="Dear"+uname+"your Estimated Fare :"+EstimatedFare;
+}
+else{
+    document.getElementById("res").innerHTML=uname+"User not found";
+}
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> Without using any variable :- </p>
+<script>
+let age=prompt("Enter age");
+new Promise((resolve,reject)=>{
+if(age>18){
+resolve("Eligible to vote")
+}
+else{
+reject("not eligible")
+}
+})
+.then((msg)=>{document.write(msg)})
+.catch((msg)=>{document.write(msg)})
+.finally(()=>{document.write("<br>Thank You")})
+
+</script>
+</body>
+</html>

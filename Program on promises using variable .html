@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Program using Promises :- 
+    <br><br>
+        ** Promise object takes two parameters , 1. Resolve 2. Reject.
+        <br><br>
+        ** promise object has a function which is expecting two parameters i,e. ,first is to fulfill the promise and second is to reject the promise.
+        <br><br>
+        L.O.C for Promises :-</p>
+        
+        <script>
+        let age=prompt("Enter age");
+        let ageCheck=new Promise((resolve,reject)=>{
+        if(age>18)
+        {
+        resolve("Eligible to vote")
+        }
+        else
+        {
+        reject("not eligible")
+        }
+        });
+        
+        ageCheck
+        .then((msg)=>{document.write(msg)})
+        .catch((msg)=>{document.write(msg)})
+        .finally(()=>{document.write("<br>Thank You")});
+        
+        </script>
+</body>
+</html>
