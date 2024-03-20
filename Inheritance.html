@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> Inheritance :-  Inheritance refers to as process of a child  class accessing all the properties from its parent class.
+<br><br>
+-> to create relation between two classes , a keyword 'extends' is used.
+<br><br>
+** this is a keyword used for accessing local values from same class while super is a keyword used for accessing values from its parent class.
+</p>
+<h4>Program for Inheritance in classes:</h4>
+
+<script>
+class mobile{
+  constructor(mobileName,mobileCompany,mobilePrice){
+   this.mobileName=mobileName;
+   this.mobileCompany=mobileCompany;
+   this.mobilePrice=mobilePrice;
+}
+printMobile(){
+document.write(`${this.mobileName}from${this.mobileCompany}pricing${this.mobilePrice}`)
+}
+}
+
+class bigc extends mobile{
+ constructor(mobileName,mobileCompany,mobilePrice){
+ super(mobileName,mobileCompany,mobilePrice);
+}
+}
+
+var m1 =new bigc("PIXEL8","Google","72000");
+m1.printMobile();
+</script>
+</body>
+</html>

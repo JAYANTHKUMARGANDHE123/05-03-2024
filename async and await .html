@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>async and await :-</h3>
+<p>
+async function : A function which returns a Promise is called as asynchronous function.
+<br><br>
+-> to create async function in JS we use 'async' keyword.
+</p>
+<h4>L.O.C for async :-</h4>
+
+<script>
+async function hello(){
+console.log("Hello this is async function");
+return Promise.reject("success");
+}
+
+hello().then((msg)=>{console.log(msg)})
+.catch((msg)=>{console.log("rejection"+msg)})       
+</script>
+<p>
+Expected Output :<br>Hello this is async function<br>
+                  error promise -success
+<br><br>
+Output on uncommenting :
+<br> Hello this is async function
+<br>rejection success
+ </p> <br><br>
+
+ <p>await : await is a keyword used to wait for the result of the Promise;
+<br><br>
+-> await keyword must be used only in async function.
+</p>
+
+<h5>L.O.C for async function using await : </h5>
+
+<script>
+let p1=new Promise((res,rej)=>{
+   setTimeout(()=>{
+      res("success")
+},6000)
+})
+
+async function hello(){
+let result=await p1;
+ console.log(result);
+ console.log("Thank you");
+}
+
+hello();
+</script>
+<p>
+Expected Output without await : Promise {pending}
+<br>Thank you
+<br><br>
+Expected Output with await :<br>success
+<br>Thank you
+                            </p>
+</body>
+</html>

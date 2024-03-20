@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Class :- class is a blueprint to create an object .<br><br>
+        
+        -> It can have methods and constructor.<br><br>
+        
+        -> Introduced in ES6.<br><br>
+        
+        -> functional constructor and classes both are used to create objects but classes can implement OOPS features like inheritance,method overloading .....
+        <br><br>
+        -> Every JS class must have one constructor.<br><br>
+        
+        -> Javascipt classes doesnot support hoisting (we cannot use a class before its creation).
+        
+        <br><br><br><br>
+        Constructor :- <br><br>
+        
+        constructor is the method in class which can create an object for the class.
+        <br><br>
+        -> Mainly used to assign the properties for an object.</p>
+        
+        
+        <h3>OPPS.html :- </h3>
+        
+        <script>
+        
+        class mobile{
+        constructor(mobileName,mobileCompany,mobilePrice){
+        this.mobileName=mobileName;
+        this.mobileCompany=mobileCompany;
+        this.mobilePrice=mobilePrice;
+        }
+        
+        printMobile(){
+        document.write(`${this.mobileName}from${this.mobileCompany}price of ${this.mobilePrice}.`)
+        }
+        }
+        
+        var m1=new mobile("PIXEL8","Google","72000");
+        m1.printMobile();
+        </script>
+        
+        <p>Expected Output : PIXEL8 from Google price of 72000.</p>
+</body>
+</html>

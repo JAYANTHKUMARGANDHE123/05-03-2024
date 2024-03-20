@@ -5,11 +5,14 @@
 <button onclick="startTimer()">start</button>
 <button onclick="stopfun()">stop</button>
 <script>
-var sec=0,min=0,hrs=0,r;
+var ms=0,sec=0,min=0,hrs=0,r;
 
 function calculateTimer()
 {
+    ms++;
+    if(ms==1000){
 sec++;
+ms=0;}
 if(sec==60)
 {
 min++;
@@ -21,12 +24,12 @@ hrs++;
 min=0;
 }
 
-document.getElementById("print").innerHTML=(`${hrs}:${min}:${sec}`);
+document.getElementById("print").innerHTML=(`${hrs}:${min}:${sec}:${ms}`);
 }
 
 function startTimer()
 {
-r=setInterval(calculateTimer,1000);
+r=setInterval(calculateTimer,10);
 }
 
 

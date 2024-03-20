@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>L.O.C for Joke creation using fetch by onclick :</p>
+<h1 id="res"></h1>
+<button onclick="getJoke()">NewJoke</button>	
+<script>
+function getJoke(){
+  fetch('https://api.chucknorris.io/jokes/random')
+  .then((data)=>data.json())
+  .then((msg)=>document.getElementById("res").innerHTML=msg.value)
+  .catch((err)=>document.write(err))
+}
+</script>
+</body>
+</html>

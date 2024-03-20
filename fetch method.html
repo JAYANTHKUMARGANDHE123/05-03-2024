@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p> fetch :- fetch method in JS is used to make an XMLHTTPRequest to an API to POST/GET the data.
+<br><br>
+http : is a set of rules to transfer data between Client and Server and has many methods like 
+<br><br>
+GET => to retrive data from database.
+<br><br>
+POST => to post new data to database.
+<br><br>
+PUT => to update an existing data in  database.
+<br><br>
+DELETE => to delete records in database.</p>
+<br><br>
+<h4>Jokes.html : Using fetch </h4>
+
+<script>
+fetch('https://api.chucknorris.io/jokes/random')
+    .then((data)=>data.json())
+    .then((msg)=>console.log(msg.value))
+    .catch((err)=>document.write(err))
+</script>
+</body>
+</html>

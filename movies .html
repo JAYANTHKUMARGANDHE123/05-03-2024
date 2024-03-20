@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="myform">
+    Date<input type="date" id="dt">
+    <label for="">select Director</label>
+    <select id="dir">
+        <option>Select Director</option>
+        <option value="SSRajamouli">SSRajamouli</option>
+        <option value="PrashanthV">PrashanthV</option>
+        <option value="SandeepRV">SandeepRV</option>
+        <option value="PrashanthN">PrashanthN</option>
+    </select> 
+    <h1 id="res"></h1>
+    <button type="submit">submit</button>
+</form>
+    <script>
+        document.getElementById("myform").addEventListener('submit',(e)=>{
+            e.preventDefault();
+            var dt= getElemetById("dt").value;
+
+        function movie(movieName,movieHero,movieHeroine,movieDirector,movieDate)
+        {
+          this.movieName=movieName;
+          this.movieHero=movieHero;
+          this.movieHeroine=movieHeroine;
+          this.movieDirector=movieDirector;
+          this.movieDate=movieDate;  
+        }
+        let m1=new movie("Hanuman","Teja","Amritha","PrashanthV","01-01-2024");
+        let m2=new movie("Salar","Prabhas","Shruthi","PrashanthN","05-02-2024");
+        let m3=new movie("ArjunR","vijay","preethi","SandeepRV","25-02-24");
+        let m4=new movie("KGF","Yash","srinidhi","PrashanthN","01-01-2024");
+        let m5=new movie("Animal","kapoor","zoya","SandeepRV","05-02-2024");
+        let m6=new movie("Bahubali","Prabhas","Anu","SSRajamouli","25-02-24");
+        let m7=new movie("Magadheera","RC","KAJU","SSRajamouli","01-01-2024");
+        let m8=new movie("RRR","NTR","AB","SSRajamouli","05-02-2024");
+
+        let movies=[m1,m2,m3,m4,m5,m6,m7,m8];
+
+       
+        for(let a of movies){
+            document.write("<br>");
+            if(a.movieDate==dt){
+                for(let i in a){
+                    document.getElementById("res").innerHTML=(i+":"+a[i]+"<br>");
+                }
+            }
+            else{
+                document.write("No Movies on specified date")
+            }
+            // if(a.movieDirector==dr){
+            //     for(let i in a){
+            //         document.write(i+":"+a[i]+"<br>")
+            //     }
+            // }
+        }})
+    </script>
+</body>
+</html>
